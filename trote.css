@@ -71,12 +71,12 @@ li {
 
 .btn-inscricao:hover {
      background-color: #ff416c;
-     transform: translateY(-3px); Efeito de flutuar */ 
+     transform: translateY(-3px); 
 }
 
-footer p {
-     /* font-size: 0.8rem;
+footer, p {
+    font-size: 0.8rem;
     margin-top: 30px;
     color: #999; 
-    padding-top: 10px; */
+    padding-top: 10px; 
 }
