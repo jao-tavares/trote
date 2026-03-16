@@ -52,7 +52,7 @@ body {
 } 
 
 .cabecalho{
-    background-color: #3e5c92;
+    background-color: #264A8A;
     color: white;
     padding: 60px 20px;
     text-align: center; 
@@ -81,4 +81,31 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0, 0.3);
+}
+
+.datas {
+    display: flex;
+    gap: 25px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.3);
+    
+}
+
+.card-data{
+    background-color: #EEF5FF;
+    border-inline-start: 4px solid #2A5298;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+}
+
+.horas-atividade p {
+    color: #27AE60;
+    font-weight: 700;
+    background-color: #E9F7EF;
+    padding: 15px;
+    border-radius: 12px;
 }
