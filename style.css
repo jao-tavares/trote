@@ -75,7 +75,7 @@ body {
     padding: 20px;  
 }
 
-.secao {
+section {
     background-color: white;
     margin-bottom: 20px;
     padding: 25px;
@@ -84,14 +84,8 @@ body {
 }
 
 .datas {
-    display: flex;
+    display: flex; 
     gap: 25px;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.3);
-    
 }
 
 .card-data{
