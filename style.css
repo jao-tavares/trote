@@ -126,6 +126,10 @@ table {
     background-color: white;
 }
 
+tr:hover{
+    background-color: #f9f9f9;
+}
+
 th, td {
     padding: 15px;
     text-align: left;
@@ -176,14 +180,18 @@ th{
 }
 
 footer{
-    width: 100%;
-    height: 100px;
     background-color: #1E3C72;
     color: white;
     text-align: center;
-    padding-top: 40px;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 0.85rem;
     line-height: 10px;
     border-top: 3px solid #FFD700;
-    
 
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
 }
