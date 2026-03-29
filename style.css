@@ -87,14 +87,14 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.datas {
+.elemento-card {
     display: flex;
     gap: 25px;
 }
 
-.card-data {
+.card-azul {
     background-color: #EEF5FF;
-    border-inline-start: 4px solid #2A5298;
+    border-inline-start: 5px solid #2A5298;
     border-radius: 12px;
     padding: 20px;
     flex: 1;
@@ -137,6 +137,7 @@ td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    vertical-align: top;
 }
 
 th {
@@ -175,6 +176,14 @@ th {
 .texto-marcado {
     color: #856404;
     font-size: 18px;
+}
+
+.ul-marcada{
+    color: #856404;
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    line-height: 35px;
 }
 
 .secao-marcada-cor-diferente {
@@ -240,4 +249,12 @@ footer p {
     border-radius: 8px;
     border: 1px solid #dee2e6;
 
+}
+
+.tbody-marcado{
+   list-style: none;
+   padding: 0px;
+   font-size: 18px;
+   color: #856404;
+   line-height: 30px;
 }
