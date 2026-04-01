@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Calculadora - Trote Solidário</title>
+  </head>
+
+  <body>
+    <nav class="menu-principal">
+      <div class="menu-container">
+        <a href="index.html" class="logo"> Trote 2026 </a>
+        <ul class="lista">
+          <li><a href="index.html"> Início </a></li>
+          <li><a href="introducao.html"> Introdução </a></li>
+          <li><a href="formato.html"> Formatos </a></li>
+          <li><a href="equipes.html"> Equipes </a></li>
+          <li><a href="provas.html"> Provas & Metas </a></li>
+          <li><a href="integracao.html"> Integração </a></li>
+          <li><a href="cronograma.html"> Cronograma </a></li>
+          <li><a href="calculadora.html"> Calculadora </a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="principal">
+      <section>
+        <h3>🧮 Simulador de Pontos - Itens Avulsos</h3>
+        <div>
+          <div class="form-grupo">
+              <!-- Rótulo da caixa de texto-->
+              <label> Arroz (5 Kg)</label> 
+              <!-- Caixa de texto com valor inicial de 0 e mínimo de 0-->
+              <!-- Indetificador desta caixa de texto -->
+
+              <input type="number" value="0" min="0" id="qtdArroz"/>
+          </div>
+
+          <div class="form-grupo">
+              <label> Feijão (2 Kg)</label>
+
+              <input type="number" value="0" min="0" id="qtdFeijao"/>
+          </div>
+
+          <div class="form-grupo">
+              <label> Óleo (900 ml)</label>
+
+              <input type="number" value="0" min="0" id="qtdOleo"/>
+          </div>
+
+          <div class="form-grupo">
+              <label> Macarrão (500 Kg)</label>
+
+              <input type="number" value="0" min="0" id="qtdMacarrao"/>
+          </div>
+          <!-- Quando o botão for clicado será chamado a função calcular no JS-->
+            <button onclick="calcular()"> Calcular o Total</button>
+            <div id="result" class="resultado">
+                Pontuação: 0 pontos
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+      <p>Codernação Trote Solidário 2026: trotesolidario@facef.br</p>
+      <p>Uni-FACEF - Centro Universitario Municipal de Franca</p>
+    </footer>
+  </body>
+</html>
