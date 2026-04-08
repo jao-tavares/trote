@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
     <title>Calculadora - Trote Solidário</title>
   </head>
 
@@ -43,21 +43,37 @@
           </div>
 
           <div class="form-grupo">
-              <label> Óleo (900 ml)</label>
-
-              <input type="number" value="0" min="0" id="qtdOleo"/>
-          </div>
-
-          <div class="form-grupo">
-              <label> Macarrão (500 Kg)</label>
+              <label> Macarrão (500 g)</label>
 
               <input type="number" value="0" min="0" id="qtdMacarrao"/>
           </div>
-          <!-- Quando o botão for clicado será chamado a função calcular no JS-->
-            <button onclick="calcular()"> Calcular o Total</button>
-            <div id="result" class="resultado">
-                Pontuação: 0 pontos
+
+          <div class="form-grupo">
+              <label> Óleo (1 Un)</label>
+
+              <input type="number" value="0" min="0" id="qtdOleo"/>
+          </div>
+        </div>
+      </section>
+
+        <section>
+          <h3>Simulador de Pontos - Kit Alimentação</h3>
+          <div>
+            <div class="form-group">
+              <label> Escolha a  cor do time</label>
+              <select name="cor" id="cor">
+                <option value="verde"> Verde</option>
+                <option value="vermelho"> Vermelho</option>
+                <option value="laranja"> Laranja</option>
+              </select>
             </div>
+          </div>
+        </section>
+
+        <!-- Quando o botão for clicado será chamado a função calcular no JS-->
+        <button onclick="calcular()"> Calcular o Total</button>
+        <div id="result" class="resultado">
+            Pontuação: 0 pontos
         </div>
 
     </main>
