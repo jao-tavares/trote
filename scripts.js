@@ -11,17 +11,30 @@ function calcular(){
     let cor = document.getElementById('cor').value
     let metaKit 
 
-    if (cor == verde){
+    if (cor == "verde"){
         metaKit = 61
     }
-    else if (cor == vermelho){
+    else if (cor == "vermelho"){
         metaKit = 32
     }
-    else if (cor == laranja){
+    else if (cor == "laranja"){
         metaKit = 21
     }
 
+    // obter o valor que o usuário informou de qtde de kits
+    let qtdeKits = Number(document.getElementById('qtdeKits').value)
+
+    // Vamos verificar se bateu a meta de kits de alimentação
+    if (qtdeKits >= metaKit){
+        pontos += 5000
+        if(qtdeKits > metaKit){
+            pontos = pontos + (qtdeKits - metaKit) * (5000 / metaKit)
+        }
+    }
+    else{
+        pontos = pontos + (qtdeKits) * (5000 / metaKit)
+    } 
 
     // Mostramos a pontuação total ao usuário
-    let result = document.getElementById('result').innerHTML = "Pontuação: " + pontos
+    document.getElementById("result").innerHTML = "Pontuação: " + pontos
 }
