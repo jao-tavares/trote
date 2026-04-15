@@ -33,8 +33,32 @@ function calcular(){
     }
     else{
         pontos = pontos + (qtdeKits) * (5000 / metaKit)
-    } 
+    }
+    // define a meta do suplemento 
+    let metaSuplemento
+    if(metaKit % 2 == 0){ // é par
+        metaSuplemento = metaKit / 2 // divisão de um inteiro por outro inteiro dá inteiro
+    }
+    else {
+        metaSuplemento = (metaKit / 2) + 0.5
+    }
+
+    let qtdeSuplementos = Number(document.getElementById("qtdeSuplementos").value)
+    if (qtdeSuplementos >= metaSuplemento){
+        pontos += 5000
+        if(qtdeSuplementos > metaSuplemento){
+            pontos += (qtdeSuplementos - metaSuplemento) * (5000 / metaSuplemento)
+        }
+    }
+    else {
+        pontos += qtdeSuplementos * (5000 / metaSuplemento)
+    }
+
+    // define a meta do leite 
+    let metaLeite = metaKit
+    // define a meta do sangue
+    let metaSangue = metaSuplemento
 
     // Mostramos a pontuação total ao usuário
-    document.getElementById("result").innerHTML = "Pontuação: " + pontos
+    document.getElementById("result").innerHTML = "Pontuação: " + pontos.toFixed(2)
 }

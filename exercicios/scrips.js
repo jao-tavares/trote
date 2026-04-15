@@ -1,0 +1,6 @@
+function churras(){
+    let qtdePessoas = Number(document.getElementById('qtdePessoas').value)
+    let kgs = (qtdePessoas * 400) / 1000 // transforma gramas em kilos
+    document.getElementById('resultadodoChurras').innerHTML = "Total de carne" + kgs + "Kg"
+
+}
