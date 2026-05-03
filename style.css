@@ -1,15 +1,15 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #FFF7E0;
+    color: #2C3E50;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .menu-principal {
-    background-color: #1e3c72;
+    background-color: #F39C12;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 .lista a {
-    color: #cbdcf7;
+    color: #070707;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -55,7 +55,7 @@ body {
 }
 
 .cabecalho {
-    background-color: #264A8A;
+    background-color: #E67E22;
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -92,9 +92,9 @@ section {
     gap: 25px;
 }
 
-.card-azul {
-    background-color: #EEF5FF;
-    border-inline-start: 5px solid #2A5298;
+.card-laranja {
+    background-color: #FFF7E0;
+    border-inline-start: 5px solid #F39C12;
     border-radius: 12px;
     padding: 20px;
     flex: 1;
@@ -141,8 +141,8 @@ td {
 }
 
 th {
-    background-color: #2a5298;
-    color: white;
+    background-color: #F39C12;
+    color: #2C3E50;
     text-transform: uppercase;
     font-size: 0.85rem;
 }
@@ -192,8 +192,8 @@ th {
 }
 
 footer {
-    background-color: #1E3C72;
-    color: white;
+    background-color: #F39C12;
+    color: #000000;
     text-align: center;
     padding: 30px 20px;
     margin-top: 50px;
@@ -209,7 +209,7 @@ footer p {
 }
 
 .timeline {
-    border-inline-start: 3px solid #2a5298;
+    border-inline-start: 3px solid #F39C12;
     padding-left: 20px;
     margin-top: 20px;
 }
@@ -227,7 +227,7 @@ footer p {
     /* sem texto*/
     width: 12px;
     height: 12px;
-    background: #ff4b2b;
+    background: #000000;
     border-radius: 50%;
     position: absolute;
     /*Cria a bolinha*/
@@ -257,4 +257,37 @@ footer p {
    font-size: 18px;
    color: #856404;
    line-height: 30px;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+button {
+    background-color: #F1C40F;
+    color:  #2C3E50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF9D6;
+    border-left: 5px solid #F39C12;
+    color: #2C3E50;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
